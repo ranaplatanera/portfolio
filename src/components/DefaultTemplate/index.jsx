@@ -1,10 +1,16 @@
-import { Header } from "../Header";
+import Footer from "../Footer";
+import Header from "../Header";
 
-export const DefaultTemplate = ({ children, setVisible, cartList }) => {
+const DefaultTemplate = ({ children }) => {
   return (
     <>
-      <Header setVisible={setVisible} cartList={cartList}/>
-      <main>{children}</main>
+      <Header />
+      <main className="container">
+        {children}
+      </main>
+      <Footer />
     </>
   );
 };
+
+export default DefaultTemplate;

@@ -1,18 +1,18 @@
-import { useState } from "react";
-import Logo from "../../assets/Logo.svg";
-import { MdSearch, MdShoppingCart } from "react-icons/md";
-import style from "./style.module.scss";
+import logo from "../../assets/portfolio.png";
+import style from "./style.module.css";
 
-export const Header = ({ setVisible, cartList}) => {
-   return (
-      <header className={style.headerContainer}>
-         <img src={Logo} alt="Logo Kenzie Burguer" />
-         <div>
-            <button className={style.btn} onClick={() => setVisible(true)}>
-               <MdShoppingCart size={21} />
-               <span className={style.cartCounter}>{cartList.length}</span>
-            </button>
-         </div>
-      </header>
-   );
+const Header = () => {
+  return (
+    <header className={style.headerContainer}>
+        <img src= {logo} alt="portfolio"/>
+        <div className="menu">
+            <p className="titlemenu">Sobre</p>
+            <p className="titlemenu">Stack</p>
+            <p className="titlemenu">Projetos</p>
+        </div>
+        <button className="btn">Contato</button>
+    </header>
+  );
 };
+
+export default Header;

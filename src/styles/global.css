@@ -1,0 +1,102 @@
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-primary: #6880FF;
+    --color-primary-hover: #7C91FF;
+    --font-primary: "Inter", sans-serif;
+    background-color: #000;
+}
+
+.container {
+    max-width: 90rem;
+    margin-inline: auto;
+
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 6.25rem;
+}
+
+.listSectionContainer {
+    max-width: 56rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    
+}
+
+.listSectionContainer__ul {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.0625rem;
+}
+
+.projectcard {
+    width: 25rem;
+    height: 11.43rem;
+    border-radius: 25px;
+    border: 0.07rem solid rgba(255, 255, 255, 0.50);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 3.75rem;
+}
+
+.divcard {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+    justify-content: left;
+    align-content:end;
+    text-align: left;
+}
+
+.techcard {
+    width: 16rem;
+    height: 5.375rem;
+    border-radius: 1.56rem;
+    border: 0.07rem solid rgba(255, 255, 255, 0.50);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1.25rem;
+    gap: 1.75rem;
+}
+
+.icon {
+    width: 1.75rem;
+    height: 1.875rem;
+}
+
+@media (max-width: 390px) {
+    .container {
+        max-width: 20.75rem;
+        margin-inline: auto;
+
+        align-items: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 6.25rem;
+
+        margin-left: 5rem;
+    }
+}
+
+

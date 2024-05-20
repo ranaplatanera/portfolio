@@ -1,15 +1,8 @@
-import { HomePage } from "./pages/HomePage";
-import "./styles/index.scss";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import LandingPage from "./pages/LandingPage";
+import "./styles/index.css";
 
-const App = () => {
-  return (
-    <>
-      <HomePage />
-      <ToastContainer autoClose={1000} closeButton />
-    </>
-  );
-};
+function App() {
+  return <LandingPage />;
+}
 
 export default App;

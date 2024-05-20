@@ -1,0 +1,47 @@
+.container {
+    width: 100%;
+    max-width: 55.1875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 7.81rem;
+
+    margin-top: 7.5rem;
+}
+
+.group {
+    width: 100%;
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+@media (max-width: 390px) {
+    .container {
+        width: 100%;
+        max-width: 24.375rem;
+        flex-direction: column;
+
+        margin-top: 3rem;
+        margin-left: 1rem;
+        gap: 5rem;
+    }
+
+    .group {
+        width: 100%;
+        max-width: 20rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.75rem;
+    }
+
+    .group2 {
+        width: 100%;
+        max-width: 17rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: .5rem;
+    }
+}

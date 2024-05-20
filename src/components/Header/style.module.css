@@ -1,0 +1,22 @@
+.headerContainer {
+    max-width: 56.25rem;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;    
+    gap: 14.31rem;
+
+    margin-top: 1.25rem;
+    margin-left: 12rem;
+}
+
+@media (max-width: 390px) {
+    .headerContainer {
+        display: flex;
+        flex-direction: column;  
+        gap: 3rem;
+
+        margin-top: 3rem;
+        margin-left: 2rem;
+    } 
+}
